@@ -144,13 +144,66 @@ img {
 .g-header .g-navigation nav ul li a:hover {
   color: hsl(5deg, 85%, 63%);
 }
-.g-header .g-offcanvas {
+.g-header .g-offcanvas-icon {
   display: block;
 }
 @media all and (min-width: 601px) {
-  .g-header .g-offcanvas {
+  .g-header .g-offcanvas-icon {
     display: none;
   }
+}
+
+/*=======================================
+    Mobile First Off Canvas Navigation
+  =======================================*/
+.g-offcanvas-shadow {
+  transition: all 0.2s ease-in-out;
+  transform: translateX(100%);
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 3000;
+}
+.g-offcanvas-shadow.show {
+  transform: translateX(0);
+}
+
+.g-offcanvas-close {
+  position: absolute;
+  right: 0.5rem;
+  top: 0.5rem;
+}
+
+.g-offcanvas-nav {
+  transition: all 0.4s ease-in-out;
+  position: fixed;
+  right: 0;
+  top: 0;
+  background-color: #ffffff;
+  max-width: 75vw;
+  width: 100%;
+  min-height: 100vh;
+  z-index: 3000;
+}
+.g-offcanvas-nav ul {
+  list-style: none;
+  padding: 1rem;
+  margin-top: 3rem;
+}
+.g-offcanvas-nav ul li {
+  margin: 1rem 0;
+}
+.g-offcanvas-nav ul li a {
+  text-decoration: none;
+  color: hsl(236deg, 13%, 42%);
+  font-weight: 700;
+  transition: all 0.4s ease-in-out;
+  padding: 1rem;
 }
 
 /*============================

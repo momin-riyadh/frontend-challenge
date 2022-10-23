@@ -183,7 +183,7 @@ img {
   }
 
 
-  .g-offcanvas {
+  .g-offcanvas-icon {
     display: block;
     @media all and (min-width: 601px) {
       display: none;
@@ -192,6 +192,63 @@ img {
 
 }
 
+/*=======================================
+    Mobile First Off Canvas Navigation
+  =======================================*/
+.g-offcanvas-shadow{
+  transition: all 0.2s ease-in-out;
+  transform: translateX(100%);
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  left: 0;
+  right: 0;
+  top:0;
+  bottom:0;
+  z-index: 3000;
+   &.show{
+    transform: translateX(0);
+  }
+}
+
+.g-offcanvas-close{
+  position: absolute;
+  right: 0.5rem;
+  top: 0.5rem;
+}
+
+.g-offcanvas-nav {
+  transition: all 0.4s ease-in-out;
+  position: fixed;
+  right: 0;
+  top: 0;
+  background-color: #ffffff;
+  max-width: 75vw;
+  width: 100%;
+  min-height: 100vh;
+  z-index: 3000;
+
+
+
+  ul {
+    list-style: none;
+    padding: 1rem;
+    margin-top: 3rem;
+
+    li {
+      margin: 1rem 0;
+
+      a {
+        text-decoration: none;
+        color: $dark-grayish-blue-color;
+        font-weight: 700;
+        transition: all 0.4s ease-in-out;
+        padding: 1rem;
+      }
+    }
+  }
+}
 
 /*============================
          Featured News
@@ -216,7 +273,7 @@ img {
   font-size: 4rem;
   font-family: Inter-ExtraBold, sans-serif;
   line-height: 1em;
-  @media all and (max-width: 600px){
+  @media all and (max-width: 600px) {
     font-size: 3rem;
   }
 }

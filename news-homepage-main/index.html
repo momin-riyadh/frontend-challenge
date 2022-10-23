@@ -52,7 +52,7 @@
                 <!--End Navigation-->
 
                 <!--off canvas-->
-                <div class="g-offcanvas">
+                <div class="g-offcanvas-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-align-right" width="44"
                          height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
                          stroke-linecap="round" stroke-linejoin="round">
@@ -65,6 +65,26 @@
                 <!--off canvas-->
 
                 <!-- Off Canvas Navigations-->
+                <div class="g-offcanvas-shadow">
+                    <div class="g-offcanvas-nav">
+                        <div class="g-offcanvas-close">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="36"
+                                 height="36" viewBox="0 0 24 24" stroke-width="2" stroke="#2c3e50" fill="none"
+                                 stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <line x1="18" y1="6" x2="6" y2="18"/>
+                                <line x1="6" y1="6" x2="18" y2="18"/>
+                            </svg>
+                        </div>
+                        <ul>
+                            <li><a href="">Home</a></li>
+                            <li><a href="">New</a></li>
+                            <li><a href=""> Popular</a></li>
+                            <li><a href=""> Trending</a></li>
+                            <li><a href="">Categories</a></li>
+                        </ul>
+                    </div>
+                </div>
                 <!-- End Off Canvas Navigations-->
 
 
@@ -174,7 +194,19 @@
 </div>
 
 <script>
-
+    (function () {
+        const gOffCanvas = document.querySelector('.g-offcanvas-shadow');
+        document.addEventListener('click', function (e) {
+            if (e.target.matches('.g-offcanvas-icon') || e.target.matches('.g-offcanvas-icon > *')) {
+                gOffCanvas.classList.toggle('show');
+            } else if (e.target.matches('.g-offcanvas-close') || e.target.matches('.g-offcanvas-close > *')) {
+                gOffCanvas.classList.remove('show');
+            }
+            // else if (!e.target.closest('.g-offcanvas')) {
+            //     gOffCanvas.classList.remove('show');
+            // }
+        })
+    })();
 </script>
 </body>
 </html>
