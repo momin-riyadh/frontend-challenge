@@ -202,9 +202,9 @@
             } else if (e.target.matches('.g-offcanvas-close') || e.target.matches('.g-offcanvas-close > *')) {
                 gOffCanvas.classList.remove('show');
             }
-            // else if (!e.target.closest('.g-offcanvas')) {
-            //     gOffCanvas.classList.remove('show');
-            // }
+            else if (!e.target.closest('.g-offcanvas-nav')) {
+                gOffCanvas.classList.remove('show');
+            }
         })
     })();
 </script>
