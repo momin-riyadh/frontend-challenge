@@ -249,6 +249,11 @@ img {
     h3 {
       color: $off-white-color;
       margin-bottom: 1rem;
+      transition: all 0.4s ease-in-out;
+      cursor: pointer;
+      &:hover{
+        color: $soft-orange-color;
+      }
     }
 
     p {
@@ -295,6 +300,7 @@ img {
       font-size: 1.2rem;
       margin: 0.5rem 0;
       transition: all 0.4s ease-in-out;
+      cursor: pointer;
       &:hover{
         color: $soft-red-color;
       }

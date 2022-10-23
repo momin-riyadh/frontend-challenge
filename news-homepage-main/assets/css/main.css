@@ -200,6 +200,11 @@ img {
 .g-sidebar-area .g-single-news h3 {
   color: hsl(36deg, 100%, 99%);
   margin-bottom: 1rem;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+.g-sidebar-area .g-single-news h3:hover {
+  color: hsl(35deg, 77%, 62%);
 }
 .g-sidebar-area .g-single-news p {
   color: hsl(233deg, 8%, 79%);
@@ -236,6 +241,7 @@ img {
   font-size: 1.2rem;
   margin: 0.5rem 0;
   transition: all 0.4s ease-in-out;
+  cursor: pointer;
 }
 .g-l-news-thumb figcaption h5:hover {
   color: hsl(5deg, 85%, 63%);
