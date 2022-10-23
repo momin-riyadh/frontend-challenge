@@ -152,6 +152,10 @@ img {
             text-decoration: none;
             color: $dark-grayish-blue-color;
             font-weight: 700;
+            transition: all 0.4s ease-in-out;
+            &:hover{
+              color: $soft-orange-color;
+            }
           }
         }
       }
@@ -286,6 +290,10 @@ img {
       font-family: Inter-ExtraBold, sans-serif;
       font-size: 1.2rem;
       margin: 0.5rem 0;
+      transition: all 0.4s ease-in-out;
+      &:hover{
+        color: $soft-orange-color;
+      }
     }
 
     p {

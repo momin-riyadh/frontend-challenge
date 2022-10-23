@@ -120,6 +120,10 @@ img {
   text-decoration: none;
   color: hsl(236deg, 13%, 42%);
   font-weight: 700;
+  transition: all 0.4s ease-in-out;
+}
+.g-header .g-navigation nav ul li a:hover {
+  color: hsl(35deg, 77%, 62%);
 }
 
 /*============================
@@ -227,6 +231,10 @@ img {
   font-family: Inter-ExtraBold, sans-serif;
   font-size: 1.2rem;
   margin: 0.5rem 0;
+  transition: all 0.4s ease-in-out;
+}
+.g-l-news-thumb figcaption h5:hover {
+  color: hsl(35deg, 77%, 62%);
 }
 .g-l-news-thumb figcaption p {
   color: hsl(236deg, 13%, 42%);
