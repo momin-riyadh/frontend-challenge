@@ -163,6 +163,10 @@ img {
   letter-spacing: 3px;
   word-spacing: 5px;
   cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+.g-f-description button:hover {
+  background-color: hsl(240deg, 100%, 5%);
 }
 
 /*============================
