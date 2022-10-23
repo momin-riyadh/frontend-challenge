@@ -73,13 +73,19 @@ img {
 
 .g-main-container {
   max-width: 1440px;
+  overflow: hidden;
   width: 100%;
   margin: auto;
   display: grid;
   grid-gap: 0 2rem;
   grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: minmax(100px, auto);
   grid-template-areas: "nav-header nav-header nav-header" "content-main content-main sidebar" "news-thumb news-thumb news-thumb";
+}
+@media all and (max-width: 600px) {
+  .g-main-container {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: "nav-header" "content-main" "sidebar" "news-thumb";
+  }
 }
 
 /*============================
