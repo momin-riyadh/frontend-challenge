@@ -175,6 +175,11 @@ img {
   font-family: Inter-ExtraBold, sans-serif;
   line-height: 1em;
 }
+@media all and (max-width: 600px) {
+  .g-f-caption-title {
+    font-size: 3rem;
+  }
+}
 
 .g-f-description p {
   color: hsl(236deg, 13%, 42%);
