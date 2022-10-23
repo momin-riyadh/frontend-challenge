@@ -212,6 +212,7 @@ img {
 @media all and (max-width: 600px) {
   .g-sidebar-area {
     padding: 1rem;
+    margin-top: 3rem;
   }
 }
 .g-sidebar-area h2 {
@@ -231,6 +232,7 @@ img {
   flex-direction: column;
   justify-content: center;
   height: 100%;
+  padding: 2rem 0;
 }
 .g-sidebar-area .g-single-news:last-of-type {
   border: none;
