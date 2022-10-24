@@ -80,8 +80,8 @@ img {
   margin-right: auto;
   margin-left: auto;
   display: grid;
-  grid-gap: 0 2rem;
-  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0 2.5rem;
+  grid-template-columns: minmax(300px, auto) 1fr 380px;
   grid-template-areas: "nav-header nav-header nav-header" "content-main content-main sidebar" "news-thumb news-thumb news-thumb";
 }
 @media all and (max-width: 600px) {
@@ -282,7 +282,6 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  height: 100%;
 }
 .g-sidebar-area .g-single-news {
   border-bottom: 1px solid hsl(236deg, 13%, 42%);
