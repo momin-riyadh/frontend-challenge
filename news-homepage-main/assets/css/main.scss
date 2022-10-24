@@ -195,7 +195,7 @@ img {
 /*=======================================
     Mobile First Off Canvas Navigation
   =======================================*/
-.g-offcanvas-shadow{
+.g-offcanvas-shadow {
   transition: all 0.2s ease-in-out;
   transform: translateX(100%);
   position: fixed;
@@ -204,15 +204,16 @@ img {
   background-color: rgba(0, 0, 0, 0.6);
   left: 0;
   right: 0;
-  top:0;
-  bottom:0;
+  top: 0;
+  bottom: 0;
   z-index: 3000;
-   &.show{
+
+  &.show {
     transform: translateX(0);
   }
 }
 
-.g-offcanvas-close{
+.g-offcanvas-close {
   position: absolute;
   right: 0.5rem;
   top: 0.5rem;
@@ -228,7 +229,6 @@ img {
   width: 100%;
   min-height: 100vh;
   z-index: 3000;
-
 
 
   ul {
